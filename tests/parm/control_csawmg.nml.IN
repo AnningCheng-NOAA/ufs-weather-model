@@ -120,6 +120,7 @@ deflate_level=1
   ialb         = 1
   iems         = 1
   iaer         = @[IAER]
+  mr2tl6       = @[MR2TL6]
   ico2         = 2
   isubc_sw     = 2
   isubc_lw     = 2

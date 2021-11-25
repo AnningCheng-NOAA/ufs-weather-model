@@ -1,3 +1,27 @@
-Sat Nov 13 23:28:39 EST 2021
+Wed Nov 24 16:08:34 EST 2021
 Start Regression test
 
+Compile 001 elapsed time 442 seconds. -DAPP=ATM -DCCPP_SUITES=FV3_GFS_v16_RRTMGP,FV3_GFS_v16_csawmg,FV3_GFS_v16_flake,FV3_GFS_v16_ugwpv1,FV3_GFS_v16_ras,FV3_GFS_v16_thompson,FV3_GFS_v16_noahmp,FV3_HAFS_v0_hwrf_thompson -DMPI=ON -DCMAKE_BUILD_TYPE=Release
+
+baseline dir = /scratch1/NCEPDEV/nems/emc.nemspara/RT/NEMSfv3gfs/develop-20211104/INTEL/control_csawmg
+working dir  = /scratch1/NCEPDEV/stmp2/Anning.Cheng/FV3_RT/rt_98375/control_csawmg
+Checking test 001 control_csawmg results ....
+ Comparing sfcf000.nc ............ALT CHECK......NOT OK
+ Comparing sfcf024.nc ............ALT CHECK......NOT OK
+ Comparing atmf000.nc ............ALT CHECK......NOT OK
+ Comparing atmf024.nc ............ALT CHECK......NOT OK
+ Comparing GFSFLX.GrbF00 .........NOT OK
+ Comparing GFSFLX.GrbF24 .........NOT OK
+ Comparing GFSPRS.GrbF00 .........NOT OK
+ Comparing GFSPRS.GrbF24 .........NOT OK
+
+  0: The total amount of wall time                        = 245.970053
+
+Test 001 control_csawmg FAIL
+
+FAILED TESTS: 
+Test control_csawmg 001 failed in check_result failed 
+
+REGRESSION TEST FAILED
+Wed Nov 24 16:22:56 EST 2021
+Elapsed time: 00h:14m:23s. Have a nice day!
