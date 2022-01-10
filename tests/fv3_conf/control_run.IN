@@ -125,7 +125,8 @@ fi
 #merra2
 if [ $USE_MERRA2 = .true. ]; then
   if [ $MR2TL6 = .true. ]; then
-    for n in 01 02 03 04 05 06 07 08 09 10 11 12; do
+##  for n in 01 02 03 04 05 06 07 08 09 10 11 12; do
+    for n in 03 04; do
       for i in 1 2 3 4 5 6; do
         cp /scratch2/NCEPDEV/climate/Anning.Cheng/mr2tl6/C384.merra2.aerclim.2003-2014.tile${i}m${n}.nc aeroclim.tile${i}m${n}.nc
       done
